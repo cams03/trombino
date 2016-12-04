@@ -20,7 +20,6 @@ div#wrapper
 {
     min-height: 100%;
     width: 100%;
-    position: relative;
 }
 
 header
@@ -30,7 +29,6 @@ header
     left: 0;
     width: 100%;
     height: 100px;
-    border: 2px solid black;
     box-sizing: border-box;
 }
 
@@ -69,9 +67,48 @@ aside
     min-width: 100px;
     width: 20%;
     min-height: calc(100vh - 150px);
-    border: 3px solid black;
+    border-right: 3px solid #8a8a8a;
     box-sizing: border-box;
+    box-shadow: 2px 2px 7px #5d5d5d;
 }
+#reset{
+  margin-bottom: 30px;
+}
+#viadeo{
+  margin-bottom: 30px;
+}
+button{
+  width: 100%;
+  padding: 13px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+      text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+button:hover{
+      background-color: #2bbbad;
+          box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+}
+figcaption{
+  border-bottom: 1px solid black;
+  box-shadow: 4px 4px 6px 0px gray;
+  background: #2bbbad;
+  color: white;
+  font-weight: bold;
+      margin-bottom: 10px;
+          text-align: center;
+            opacity: 0.85;
+}
+figcaption:hover {
+  opacity: 1;
+  transition: 0.7s;
+  cursor: pointer;}
+
+
 
 main
 {
@@ -92,51 +129,26 @@ div.github, div.linkedin, div.viadeo
 
 article, article *
 {
-    border: 1px solid black;
+  padding: 2px;
 }
 /* */
 
-section
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-article
-{
-    position: relative;
-}
-
-figure
-{
-    position: relative;
-}
-
 figure img
 {
-    background-image: url("../images/fond.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 250px 500px;
-    width: 250px;
-    height: 500px;
-}
-
-div.icons
-{
-    display: flex;
-    justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 250px 500px;
+  width: 250px;
+    height: 420px;  /* border: 1px solid #777575; */
+  box-shadow: 3px 2px 12px #4a4a4a;
+  /* padding: 2px; */
+  margin-bottom: 9px;
 }
 
 .unused, .unused a
 {
     cursor: default;
     opacity: 0;
-}
-
-.iconsphomail
-{
-    position: relative;
 }
 
 .iconpho, .iconmail
@@ -147,55 +159,109 @@ div.icons
 .textpho, .textmail
 {
     display: none;
-    position: absolute;
     bottom: 100%;
     right: 0;
+    background-color: #FFFFFF;
 }
 
-.textpho.selected, .textmail.selected
+.iconpho:hover+.iconmail>.textmail, .iconmail:hover~.iconpho>.textpho
+{
+    display: none;
+}
+
+
+
+
+/* icon*/
+.dflexsp-b{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.iconsphomail{
+  margin-top: 5px;
+  padding-right: 0px;
+margin-right: 0px;
+}
+.icon-rotation{
+}
+
+.icon-rotation:hover{
+  -ms-transform: rotate(360deg); /* IE 9 */
+     -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+     transform: rotate(360deg);
+transition: 1s;
+}
+
+.iconsskills{
+  margin-top: 10px;
+  padding-left: 1em;
+padding-right: 1em;
+    margin-bottom: 25px;
+}
+ /* effet sur texte */
+
+
+
+
+.textpho.selected, .textmail.selected, .iconpho:hover>.textpho, .iconmail:hover>.textmail
 {
     display: block;
 }
 
 div.text
 {
-    position: absolute;
+  left: 30px;
     top: 0;
-    left: 0;
     width: 250px;
-    height: 500px;
+    height: 420px;
     background: #FFFFFF;
     opacity: 0;
+    transition: 1s;
 }
-div.text p
+div.text:hover
 {
-    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 420px;
+    background: #FFFFFF;
+    opacity: 0;
+    transition: 1s;
 }
 
 p.texttext
 {
-    text-align: left;
+  margin-top: 9em;
+  border: 4px solid #ee6e73;
+  padding: 2em;
+    box-shadow: 7px 7px 10px #8e8e8e;
+  max-width: 181px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  margin-left: 12%;
 }
 div.text p.textext
 {
-    top: 0;
+  top: 10px;
     left: 0;
 }
 
 p.textquote
 {
-    text-align: right;
+text-align: center;;
 }
 div.text p.textquote
 {
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    left: 110px;
+
 }
 
 div.text:hover
 {
-    opacity: 0.75;
-}
+    opacity: 0.96;
+  transition: 0.8s}
 
 details.text
 {
@@ -219,4 +285,3 @@ details.text
         display: block;
     }
 }
-/*Yo les gars*/

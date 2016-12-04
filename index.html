@@ -3,21 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Projet SIMPLonMARS3 - Trombinonoscope Promo 3">
+        <meta name="author" content="Camille, Kevin, Sophie">
         <title>Trombinoscope</title>
-        <link rel="stylesheet" href="simplonstrap/simplonstrap.css">
+        <link rel="stylesheet" href="css/simplonstrap.css">
+        <link rel="stylesheet" href="fontello/css/fontello.css">
+        <link rel="stylesheet" href="css/font-mfizz.css">
+
+
         <link rel="stylesheet" href="css/style.css">
         <script src="js/asidemenu.js"></script>
         <script src="js/phomail.js"></script>
     </head>
     <body>
 
-        <div id="wrapper">
+        <div id="wrapper" class="porel">
             <header>
                 <h1>TITRE H1</h1>
             </header>
 
+            <!-- Conteneur central -->
             <div id="main-container">
+                <!-- Menu à gauche utilisé par le script asidemenu.js -->
                 <aside>
+                    <!-- Vider la sélection -->
+                    <button id="reset">
+                        Reset
+                    </button>
+
+                    <!-- Sélectionner un réseau social -->
                     <button id="github">
                         GitHub
                     </button>
@@ -27,265 +41,2324 @@
                     <button id="viadeo">
                         Viadeo
                     </button>
-                    <button id="reset">
-                        Reset
+                    <!-- Sélectionner une compétence -->
+                    <button id="html">
+                        HTML
+                    </button>
+                    <button id="css">
+                        CSS
+                    </button>
+                    <button id="javascript">
+                        JavaScript
+                    </button>
+                    <button id="php">
+                        PHP
                     </button>
                 </aside>
+
+                <!-- corps de la page -->
                 <main>
-                <!-- Blocs de tests à effacer du rendu -->
-                <div class="github"></div>
-                <div class="linkedin"></div>
-                <div class="viadeo"></div>
-                <div class="viadeo"></div>
-                <div class="github"></div>
-                <div class="linkedin"></div>
-                <div class="linkedin"></div>
-                <div class="viadeo"></div>
-                <div class="github"></div>
-                <!-- -->
-                <section>
-                    <!-- NAME -->
-                    <article>
-                        <figure>
-                            <img src="" alt="" />
+                <section class="containflex">
+                    <!-- ARLAUD Samuel -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery  porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
                             <figcaption>
-                            NAME
+                            <span class="surname">
+                                Samuel
+                            </span>
+                            <span class="name">
+                                ARLAUD
+                            </span>
                             </figcaption>
                         </figure>
-                        <div class="icons">
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
                             <div class="iconsres">
-                                <span class="iconlinkedin">
-                                    <a href="#">
-                                        A
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
                                     </a>
                                 </span>
                                 <span class="iconviadeo">
-                                    <a href="#">
-                                        B
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
                                     </a>
                                 </span>
+
                                 <span class="icongithub">
-                                    <a href="#">
-                                        C
-                                    </a>
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
                                 </span>
                             </div>
-                            <div class="iconsphomail">
-                                <span class="iconpho" id="text1pho">
-                                    E
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text01pho">
+
+                                    <span class="textpho poabs" id="text01phon">
+                                        00.00.00.00.00
+                                    </span>
                                 </span>
-                                <span class="iconmail" id="text1mai">
-                                    F
-                                </span>
-                                <span class="textpho" id="text1phon">
-                                    00.00.00.00.00
-                                </span>
-                                <span class="textmail" id="text1mail">
-                                    example@example.net
+                                <span class="icon-mail-alt" id="text01mai">
+
+                                    <span class="textmail poabs" id="text01mail">
+                                        example@example.net
+                                    </span>
                                 </span>
                             </div>
                         </div>
-                        <div class="skills">
-                                <span class="iconhtml">
-                                    html
-                                </span>
-                                <span class="iconcss">
-                                    css
-                                </span>
-                                <span class="iconjavascript">
-                                    javascript
-                                </span>
-                                <span class="iconjquery">
-                                    jquery
-                                </span>
-                                <span class="iconphp">
-                                    php
-                                </span>
-                                <span class="iconc">
-                                    c
-                                </span>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+
+                            </span>
+
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
                         </div>
-                        <div class="text">
-                            <p class="texttext">
-                            Bla
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
                             </p>
-                            <p class="textquote">
-                                Blu
+                            <p class="textquote poabs">
+                            Blu
                             </p>
                         </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
                         <details class="text">
                             <summary>
-                            Prout
+                            Informations
                             </summary>
                             <p class="texttext">
-                            Bla
+                            Motivé, dynamique, passionné d'informatique.
                             </p>
                             <p class="textquote">
-                                Blu
+                            Blu
                             </p>
                         </details>
                     </article>
 
-                    <!-- NAME -->
-                    <article class="linkedin">
-                        <figure>
-                            <img src="photos/Black_Metal_Barbies.jpg" alt="" />
+                    <!-- AZLI Fodil -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
                             <figcaption>
-                            NAME
+                            <span class="surname">
+                                Fodil
+                            </span>
+                            <span class="name">
+                                AZLI
+                            </span>
                             </figcaption>
                         </figure>
-                        <div class="icons">
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
                             <div class="iconsres">
-                                <span class="iconlinkedin">
-                                    <a href="#">
-                                        A
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
                                     </a>
                                 </span>
-                                <span class="iconviadeo unused">
-                                    <a href="#">
-                                        B
-                                    </a>
+                                <span class="iconviadeo">
+                                  <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                  </a>
                                 </span>
                                 <span class="icongithub">
-                                    <a href="#">
-                                        C
-                                    </a>
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
                                 </span>
                             </div>
-                            <div class="iconsphomail">
-                                <span class="iconpho" id="text2pho">
-                                    E
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text02pho">
+
+                                    <span class="textpho poabs" id="text02phon">
+                                        00.00.00.00.00
+                                    </span>
                                 </span>
-                                <span class="iconmail" id="text2mai">
-                                    F
-                                </span>
-                                <span class="textpho" id="text2phon">
-                                    00.00.00.00.00
-                                </span>
-                                <span class="textmail" id="text2mail">
-                                    example@example.net
+                                <span class="icon-mail-alt" id="text02mai">
+
+                                    <span class="textmail poabs" id="text02mail">
+                                        example@example.net
+                                    </span>
                                 </span>
                             </div>
                         </div>
-                        <div class="skills">
-                                <span class="iconhtml">
-                                    html
-                                </span>
-                                <span class="iconcss">
-                                    css
-                                </span>
-                                <span class="iconjavascript">
-                                    javascript
-                                </span>
-                                <span class="iconjquery">
-                                    jquery
-                                </span>
-                                <span class="iconphp unused">
-                                    php
-                                </span>
-                                <span class="iconc">
-                                    c
-                                </span>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
                         </div>
-                        <div class="text">
-                            <p class="texttext">
-                            Bla
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
                             </p>
-                            <p class="textquote">
-                                Blu
+                            <p class="textquote poabs">
+                            Blu
                             </p>
                         </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
                         <details class="text">
                             <summary>
-                            Prout
+                            Informations
                             </summary>
                             <p class="texttext">
-                            Bla
+                            Motivé, dynamique, passionné d'informatique.
                             </p>
                             <p class="textquote">
-                                Blu
+                            Blu
                             </p>
                         </details>
                     </article>
 
-                    <!-- NAME -->
-                    <article class="viadeo">
-                        <figure>
-                            <img src="photos/Black_Metal_Barbies.jpg" alt="" />
+                    <!-- BARBIER Jean-Jacques -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
                             <figcaption>
-                            NAME
+                            <span class="surname">
+                                Jean-Jacques
+                            </span>
+                            <span class="name">
+                                BARBIER
+                            </span>
                             </figcaption>
                         </figure>
-                        <div class="icons">
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
                             <div class="iconsres">
-                                <span class="iconlinkedin unused">
-                                    <a href="#">
-                                        A
+
+
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotation">
+
                                     </a>
                                 </span>
                                 <span class="iconviadeo">
-                                    <a href="#">
-                                        B
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
                                     </a>
                                 </span>
                                 <span class="icongithub">
-                                    <a href="#">
-                                        C
+                                    <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
                                     </a>
                                 </span>
                             </div>
-                            <div class="iconsphomail">
-                                <span class="iconpho" id="text3pho">
-                                    E
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text03pho">
+
+                                    <span class="textpho poabs" id="text03phon">
+                                        00.00.00.00.00
+                                    </span>
                                 </span>
-                                <span class="iconmail" id="text3mai">
-                                    F
-                                </span>
-                                <span class="textpho" id="text3phon">
-                                    00.00.00.00.00
-                                </span>
-                                <span class="textmail" id="text3mail">
-                                    example@example.net
+                                <span class="icon-mail-alt" id="text03mai">
+
+                                    <span class="textmail poabs" id="text03mail">
+                                        example@example.net
+                                    </span>
                                 </span>
                             </div>
                         </div>
-                        <div class="skills">
-                                <span class="iconhtml">
-                                    html
-                                </span>
-                                <span class="iconcss">
-                                    css
-                                </span>
-                                <span class="iconjavascript">
-                                    javascript
-                                </span>
-                                <span class="iconjquery unused">
-                                    jquery
-                                </span>
-                                <span class="iconphp">
-                                    php
-                                </span>
-                                <span class="iconc unused">
-                                    c
-                                </span>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
                         </div>
-                        <div class="text">
-                            <p class="texttext">
-                            Bla
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
                             </p>
-                            <p class="textquote">
-                                Blu
+                            <p class="textquote poabs">
+                            Blu
                             </p>
                         </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
                         <details class="text">
                             <summary>
-                            Prout
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- BERGMAN Laurene -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Laurène
+                            </span>
+                            <span class="name">
+                                BERGMAN
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text04pho">
+
+                                    <span class="textpho poabs" id="text04phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text04mai">
+
+                                    <span class="textmail poabs" id="text04mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
                             </summary>
                             <p class="texttext">
                             Bla
                             </p>
                             <p class="textquote">
-                                Blu
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- BOUGHANMI Ryhad -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Ryhad
+                            </span>
+                            <span class="name">
+                                BOUGHANMI
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text05pho">
+
+                                    <span class="textpho poabs" id="text05phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text05mai">
+
+                                    <span class="textmail poabs" id="text05mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- BRODIN Elise -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Élise
+                            </span>
+                            <span class="name">
+                                BRODIN
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text06pho">
+
+                                    <span class="textpho poabs" id="text06phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text06mai">
+
+                                    <span class="textmail poabs" id="text06mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- CASTEJON Kevin -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Kévin
+                            </span>
+                            <span class="name">
+                                CASTEJON
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text07pho">
+
+                                    <span class="textpho poabs" id="text07phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text07mai">
+
+                                    <span class="textmail poabs" id="text07mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- CHABANE Ibni-Yamine -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Ibni-Yamine
+                            </span>
+                            <span class="name">
+                                CHABANE
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text08pho">
+
+                                    <span class="textpho poabs" id="text08phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text08mai">
+
+                                    <span class="textmail poabs" id="text08mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- DISSAIS Valentin -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Valentin
+                            </span>
+                            <span class="name">
+                                DISSAIS
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text09pho">
+
+                                    <span class="textpho poabs" id="text09phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text09mai">
+
+                                    <span class="textmail poabs" id="text09mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- DRANSFIELD Alice -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Alice
+                            </span>
+                            <span class="name">
+                                DRANSFIELD
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text10pho">
+
+                                    <span class="textpho poabs" id="text10phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text10mai">
+
+                                    <span class="textmail poabs" id="text10mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- DUBOST Alexandra -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Alexandre
+                            </span>
+                            <span class="name">
+                                DUBOST
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text11pho">
+
+                                    <span class="textpho poabs" id="text11phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text11mai">
+
+                                    <span class="textmail poabs" id="text11mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- FRANCIA Camille -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Camille
+                            </span>
+                            <span class="name">
+                                FRANCIA
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone" id="text20pho">
+                                    <span class="textpho poabs" id="text20phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text20mai">
+
+                                    <span class="textmail poabs" id="text20mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- GUILLOT Jessica -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Jessica
+                            </span>
+                            <span class="name">
+                                GUILLOT
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text13pho">
+
+                                    <span class="textpho poabs" id="text13phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text13mai">
+
+                                    <span class="textmail poabs" id="text13mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- HAMIDI Okba -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Okba
+                            </span>
+                            <span class="name">
+                                HAMIDI
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text14pho">
+
+                                    <span class="textpho poabs" id="text14phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text14mai">
+
+                                    <span class="textmail poabs" id="text14mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                          <span class="icon-html icon-hover">
+
+                          </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+
+                        </details>
+                    </article>
+
+                    <!-- HAUGER Felix -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Félix
+                            </span>
+                            <span class="name">
+                                HAUGER
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text15pho">
+
+                                    <span class="textpho poabs" id="text15phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text15mai">
+
+                                    <span class="textmail poabs" id="text15mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- KHELIFI Linda -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Linda
+                            </span>
+                            <span class="name">
+                                KHELIFI
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text16pho">
+
+                                    <span class="textpho poabs" id="text16phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text16mai">
+
+                                    <span class="textmail poabs" id="text16mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- KHOUS Mohamed -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Mohamed
+                            </span>
+                            <span class="name">
+                                KHOUS
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text17pho">
+
+                                    <span class="textpho poabs" id="text17phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text17mai">
+
+                                    <span class="textmail poabs" id="text17mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- MAACHAOUI Seifeddine -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Seifeddine
+                            </span>
+                            <span class="name">
+                                MAACHAOUI
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text18pho">
+
+                                    <span class="textpho poabs" id="text18phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text18mai">
+
+                                    <span class="textmail poabs" id="text18mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- MAGNIN Julien -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Julien
+                            </span>
+                            <span class="name">
+                                MAGNIN
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text19pho">
+
+                                    <span class="textpho poabs" id="text19phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text19mai">
+
+                                    <span class="textmail poabs" id="text19mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- MARTEL Sophie -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Sophie
+                            </span>
+                            <span class="name">
+                                MARTEL
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-mobile"id="text12pho">
+
+                                    <span class="textpho poabs" id="text12phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text12mai">
+
+                                    <span class="textmail poabs" id="text12mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- MONTEL Sylvain -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Sylvain
+                            </span>
+                            <span class="name">
+                                MONTEL
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text21pho">
+
+                                    <span class="textpho poabs" id="text21phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text21mai">
+
+                                    <span class="textmail poabs" id="text21mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+
+                            </span>
+                            <span class="icon-javascript">
+                           </span>
+                            <span class="icon-jquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- RAHOU Jamil -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Jamil
+                            </span>
+                            <span class="name">
+                                RAHOU
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text22pho">
+
+                                    <span class="textpho poabs" id="text22phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text22mai">
+
+                                    <span class="textmail poabs" id="text22mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- SCHMIDT Jonathan -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Jonathan
+                            </span>
+                            <span class="name">
+                                SCHMIDT
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text23pho">
+
+                                    <span class="textpho poabs" id="text23phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text23mai">
+
+                                    <span class="textmail poabs" id="text23mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- TAILLEUR Cesar -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Cesar
+                            </span>
+                            <span class="name">
+                                TAILLEUR
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone"id="text24pho">
+
+                                    <span class="textpho poabs" id="text24phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text24mai">
+
+                                    <span class="textmail poabs" id="text24mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- VANHOVE-LAMON Mario -->
+                    <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="images/fond.jpg" alt="" />
+                            <figcaption>
+                            <span class="surname">
+                                Mario
+                            </span>
+                            <span class="name">
+                                VANHOVE-LAMON
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="iconlinkedin rotatee">
+                                    <a target="_blank" rel="external" href="#" class="icon-github-circled icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="#" class="icon-viadeo icon-rotate">
+
+                                    </a>
+                                </span>
+                                <span class="icongithub">
+                                  <a target="_blank" rel="external" href="#" class="icon-twitter icon-rotate">
+                                  </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="icon-iphone" id="text25pho">
+
+                                    <span class="textpho poabs" id="text25phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="icon-mail-alt" id="text25mai">
+
+                                    <span class="textmail poabs" id="text25mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="icon-html icon-hover">
+                            </span>
+                            <span class="icon-css icon-hover">
+                            </span>
+                            <span class="icon-javascript">
+
+                            </span>
+                            <span class="iconjquery">
+                                jquery
+                            </span>
+                            <span class="icon-php-alt">
+                            </span>
+                            <span class="icon-c">
+
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran -->
+                        <div class="text poabs">
+                            <p class="texttext poabs">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote poabs">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttext">
+                            Motivé, dynamique, passionné d'informatique.
+                            </p>
+                            <p class="textquote">
+                            Blu
                             </p>
                         </details>
                     </article>
