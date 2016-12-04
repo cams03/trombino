@@ -13,24 +13,6 @@
       "src": "fontawesome"
     },
     {
-      "uid": "7eed62ae3352efe006c173a890f44d45",
-      "css": "viadeo",
-      "code": 62121,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "0f6a2573a7b6df911ed199bb63717e27",
-      "css": "github-circled",
-      "code": 61595,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "627abcdb627cb1789e009c08e2678ef9",
-      "css": "twitter",
-      "code": 61593,
-      "src": "fontawesome"
-    },
-    {
       "uid": "559647a6f430b3aeadbecd67194451dd",
       "css": "menu",
       "code": 61641,
@@ -40,6 +22,12 @@
       "uid": "dfec4ffa849d8594c2e4b86f6320b8a6",
       "css": "angle-double-down",
       "code": 61699,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c53068fe21c8410b0a098b4c52c3d37e",
+      "css": "down-circled2",
+      "code": 59393,
       "src": "fontawesome"
     },
     {
@@ -114,12 +102,6 @@
       "code": 61594,
       "src": "fontawesome"
     },
-    {
-      "uid": "767fede84586366cd7d6c835be745454",
-      "css": "mobile",
-      "code": 59393,
-      "src": "entypo"
-    }
     {
       "uid": "0f6a2573a7b6df911ed199bb63717e27",
       "css": "github-circled",
@@ -298,6 +280,12 @@
       "uid": "b86df50a2d898bfcd371fa86c0b8b2fb",
       "css": "user-o",
       "code": 62144,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7eed62ae3352efe006c173a890f44d45",
+      "css": "viadeo",
+      "code": 62121,
       "src": "fontawesome"
     },
     {

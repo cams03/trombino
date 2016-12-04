@@ -1,5 +1,6 @@
 
 .icon-home:before { content: '\e800'; } /* '' */
+.icon-down-circled2:before { content: '\e801'; } /* '' */
 .icon-down-open:before { content: '\e802'; } /* '' */
 .icon-battery:before { content: '\e803'; } /* '' */
 .icon-up-open:before { content: '\e804'; } /* '' */
@@ -34,8 +35,6 @@
 .icon-html5:before { content: '\f13b'; } /* '' */
 .icon-css3:before { content: '\f13c'; } /* '' */
 .icon-stackoverflow:before { content: '\f16c'; } /* '' */
-.icon-mobile:before { content: '\e801'; } /* '' */
-
 .icon-tumblr:before { content: '\f173'; } /* '' */
 .icon-wordpress:before { content: '\f19a'; } /* '' */
 .icon-codeopen:before { content: '\f1cb'; } /* '' */
